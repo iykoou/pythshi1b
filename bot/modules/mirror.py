@@ -92,11 +92,11 @@ class MirrorListener(listeners.MirrorListeners):
             msg = f'<a href="{link}">{download_dict[self.uid].name()}</a> ({download_dict[self.uid].size()})'
             LOGGER.info(f'Done Uploading {download_dict[self.uid].name()}')
             if INDEX_URL is not None:
-                share_url = f'{INDEX_URL}/{download_dict[self.uid].name()}'
+                share_url = f'{INDEX_URL}/Userbot2/{download_dict[self.uid].name()}'
                 share_url = share_url.replace(' ', '%20')
                 if os.path.isdir(f'{DOWNLOAD_DIR}/{self.uid}/{download_dict[self.uid].name()}'):
                     share_url += '/'
-                msg += f'\n\n Shareable link: <a href="{share_url}">here</a>'
+                msg += f'\n\n Direct download link: <a href="{share_url}">Copy this link bro</a>'
 
         if len(download_dict) == 0:
             self.clean()
