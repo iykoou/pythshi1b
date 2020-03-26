@@ -96,7 +96,7 @@ class MirrorListener(listeners.MirrorListeners):
                 share_url = share_url.replace(' ', '%20')
                 if os.path.isdir(f'{DOWNLOAD_DIR}/{self.uid}/{download_dict[self.uid].name()}'):
                     share_url += '/'
-                msg += f'\n\n Direct download link: <a href="{share_url}">Copy this link bro</a>'
+                msg += f'\n\nDirect download link: <a href="{share_url}">Click Here</a>'
 
         if len(download_dict) == 0:
             self.clean()
